@@ -1,7 +1,10 @@
 import majority_number as m
-arr = [1, 1, 5, 1, 3, 5, 1]
-n = len(arr)
-M = m.findMajority()
+
+mystring = input("enter your string")
+myArr = mystring.split(",")
+m.findMajority(mystring)
+
+myIntArr = m.convertToIntArray(myArr)
 
 print("hello")
 # findMajority(arr, n)
