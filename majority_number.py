@@ -13,6 +13,7 @@ def findMajority():
             index = i
     if (maxcount > n//2):
         print("Majority number is - ",arr[index])
+        print("Majority number count ", maxcount)
     
     else:
         print("no Majority Element")
