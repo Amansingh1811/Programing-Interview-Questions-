@@ -1,7 +1,9 @@
-def findMajority(myString):
+import convertToIntArray as c
+
+def findMajority(myString) -> None:
     arr = myString.split(",")
     n = len(arr)
-    arr = convertToIntArray(arr)
+    arr = c.convertToIntArray(arr)
     maxcount = 0 
     index = -1 
     for i in range(n):
@@ -19,10 +21,9 @@ def findMajority(myString):
     else:
         print("no Majority Element")
         
-        
 
-def convertToIntArray(strArr: []):
-    for i in range(len(strArr)):
-        strArr[i] = int(strArr[i])    
-    return strArr  
+
+def printmNnumber(strArr: [], n:int):
+    index = n -1
+    return  strArr[index]
 

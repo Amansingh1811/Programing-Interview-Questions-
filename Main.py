@@ -1,10 +1,13 @@
 import majority_number as m
+import convertToIntArray as c
 
-mystring = input("enter your string")
+mystring = input("enter your comma seperated string(list): ")
 myArr = mystring.split(",")
-m.findMajority(mystring)
+z = m.findMajority(mystring)
 
-myIntArr = m.convertToIntArray(myArr)
+intArr = c.convertToIntArray(myArr)
+print("Int Array: ", z);
 
-print("hello")
-# findMajority(arr, n)
+nthNumber = int(input("enter your nth number: "))
+nn = m.printmNnumber(myArr, nthNumber)
+print("your nth number is ", nn)
