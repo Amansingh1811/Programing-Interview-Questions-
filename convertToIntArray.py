@@ -1,4 +1,4 @@
-def convertToIntArray(strArr: []):
+def convertToIntArray(strArr: []) -> []:
     length = len(strArr)
     for i in range(length):
         num = strArr[i] 
@@ -6,4 +6,4 @@ def convertToIntArray(strArr: []):
             strArr[i] = 0
         else:
             strArr[i] = int(num)
-    return strArr  
+    return strArr

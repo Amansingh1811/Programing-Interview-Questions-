@@ -1,7 +1,7 @@
 import convertToIntArray as c
 
-def findMajority(myString) -> None:
-    arr = myString.split(",")
+def findMajority(param) -> None:
+    arr = param.split(",")
     n = len(arr)
     arr = c.convertToIntArray(arr)
     maxcount = 0 
@@ -23,7 +23,7 @@ def findMajority(myString) -> None:
         
 
 
-def printmNnumber(strArr: [], n:int):
+def printmNnumber(strArr: [], n:int) -> int:
     index = n -1
     return  strArr[index]
 
